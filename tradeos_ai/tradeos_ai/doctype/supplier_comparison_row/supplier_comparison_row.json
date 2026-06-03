@@ -1,0 +1,145 @@
+{
+ "autoname": "format:SCR-{YYYY}-{#####}",
+ "creation": "2026-06-04 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier_quote",
+  "supplier",
+  "unit_price",
+  "quantity",
+  "moq",
+  "lead_time_days",
+  "risk_score",
+  "evidence_count",
+  "verified_evidence_count",
+  "price_score",
+  "lead_time_score",
+  "risk_score_normalized",
+  "evidence_score",
+  "total_score",
+  "ranking",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier_quote",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier Quote",
+   "options": "Supplier Quote",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "supplier_quote.supplier",
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Supplier",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "supplier_quote.unit_price",
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Unit Price",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "supplier_quote.quantity",
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "supplier_quote.moq",
+   "fieldname": "moq",
+   "fieldtype": "Float",
+   "label": "MOQ",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "supplier_quote.lead_time_days",
+   "fieldname": "lead_time_days",
+   "fieldtype": "Int",
+   "label": "Lead Time Days",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "supplier_quote.risk_score",
+   "fieldname": "risk_score",
+   "fieldtype": "Float",
+   "label": "Risk Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "evidence_count",
+   "fieldtype": "Int",
+   "label": "Evidence Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "verified_evidence_count",
+   "fieldtype": "Int",
+   "label": "Verified Evidence Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "price_score",
+   "fieldtype": "Float",
+   "label": "Price Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lead_time_score",
+   "fieldtype": "Float",
+   "label": "Lead Time Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "risk_score_normalized",
+   "fieldtype": "Float",
+   "label": "Risk Score Normalized",
+   "read_only": 1
+  },
+  {
+   "fieldname": "evidence_score",
+   "fieldtype": "Float",
+   "label": "Evidence Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_score",
+   "fieldtype": "Float",
+   "label": "Total Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ranking",
+   "fieldtype": "Int",
+   "label": "Ranking",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "istable": 1,
+ "modified": "2026-06-04 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TradeOS AI",
+ "name": "Supplier Comparison Row",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1
+}
