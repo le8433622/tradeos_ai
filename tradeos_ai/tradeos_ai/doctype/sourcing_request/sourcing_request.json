@@ -3,6 +3,7 @@
  "creation": "2026-06-04 00:00:00.000000",
  "doctype": "DocType",
  "engine": "InnoDB",
+ "allow_events_in_timeline": 1,
  "field_order": [
   "request_title",
   "company",
@@ -66,6 +67,7 @@
    "options": "Low\nMedium\nHigh\nUrgent"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "status",
    "fieldtype": "Select",
    "in_list_view": 1,
@@ -135,6 +137,7 @@
    "label": "Evaluation"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "expected_saving",
    "fieldtype": "Currency",
    "label": "Expected Saving",
@@ -142,6 +145,7 @@
    "read_only": 1
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "risk_note",
    "fieldtype": "Small Text",
    "label": "Risk Note",
@@ -159,6 +163,7 @@
    "label": "Approval"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "approved_by",
    "fieldtype": "Link",
    "label": "Approved By",
@@ -166,6 +171,7 @@
    "read_only": 1
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "approved_at",
    "fieldtype": "Datetime",
    "label": "Approved At",
@@ -177,6 +183,7 @@
    "label": "Result"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "purchase_order",
    "fieldtype": "Link",
    "label": "Purchase Order",
