@@ -1,0 +1,160 @@
+{
+ "autoname": "format:SQ-{YYYY}-{#####}",
+ "creation": "2026-06-04 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sourcing_request",
+  "supplier",
+  "supplier_name",
+  "quote_date",
+  "currency",
+  "unit_price",
+  "quantity",
+  "column_break_8",
+  "moq",
+  "lead_time_days",
+  "payment_terms",
+  "shipping_terms",
+  "warranty_terms",
+  "risk_score",
+  "quote_status",
+  "evidence_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "sourcing_request",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sourcing Request",
+   "options": "Sourcing Request",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name"
+  },
+  {
+   "fieldname": "quote_date",
+   "fieldtype": "Date",
+   "label": "Quote Date"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Unit Price",
+   "options": "currency"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "moq",
+   "fieldtype": "Float",
+   "label": "MOQ"
+  },
+  {
+   "fieldname": "lead_time_days",
+   "fieldtype": "Int",
+   "label": "Lead Time Days"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Small Text",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "shipping_terms",
+   "fieldtype": "Small Text",
+   "label": "Shipping Terms"
+  },
+  {
+   "fieldname": "warranty_terms",
+   "fieldtype": "Small Text",
+   "label": "Warranty Terms"
+  },
+  {
+   "fieldname": "risk_score",
+   "fieldtype": "Float",
+   "label": "Risk Score"
+  },
+  {
+   "fieldname": "quote_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Quote Status",
+   "options": "Draft\nReceived\nSelected\nRejected"
+  },
+  {
+   "fieldname": "evidence_notes",
+   "fieldtype": "Small Text",
+   "label": "Evidence Notes"
+  }
+ ],
+ "modified": "2026-06-04 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TradeOS AI",
+ "name": "Supplier Quote",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1
+}
