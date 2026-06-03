@@ -1,0 +1,150 @@
+{
+ "autoname": "format:QE-{YYYY}-{#####}",
+ "creation": "2026-06-04 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sourcing_request",
+  "supplier_quote",
+  "supplier",
+  "evidence_type",
+  "evidence_title",
+  "source_url",
+  "column_break_7",
+  "attachment",
+  "evidence_text",
+  "captured_at",
+  "captured_by",
+  "verification_status",
+  "verification_note"
+ ],
+ "fields": [
+  {
+   "fieldname": "sourcing_request",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sourcing Request",
+   "options": "Sourcing Request",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supplier_quote",
+   "fieldtype": "Link",
+   "label": "Supplier Quote",
+   "options": "Supplier Quote"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier",
+   "read_only": 0
+  },
+  {
+   "fieldname": "evidence_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Evidence Type",
+   "options": "Screenshot\nChat Log\nEmail\nQuotation File\nInvoice\nWebsite URL\nPhone Call Note\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "evidence_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Evidence Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source_url",
+   "fieldtype": "Small Text",
+   "label": "Source URL"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "evidence_text",
+   "fieldtype": "Long Text",
+   "label": "Evidence Text"
+  },
+  {
+   "fieldname": "captured_at",
+   "fieldtype": "Datetime",
+   "label": "Captured At"
+  },
+  {
+   "fieldname": "captured_by",
+   "fieldtype": "Link",
+   "label": "Captured By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "verification_status",
+   "fieldtype": "Select",
+   "label": "Verification Status",
+   "options": "Unverified\nVerified\nRejected\nNeed Review"
+  },
+  {
+   "fieldname": "verification_note",
+   "fieldtype": "Small Text",
+   "label": "Verification Note"
+  }
+ ],
+ "modified": "2026-06-04 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TradeOS AI",
+ "name": "Quote Evidence",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1
+}
