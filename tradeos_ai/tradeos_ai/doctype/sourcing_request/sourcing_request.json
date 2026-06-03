@@ -1,0 +1,237 @@
+{
+ "autoname": "format:SR-{YYYY}-{#####}",
+ "creation": "2026-06-04 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "request_title",
+  "company",
+  "requested_by",
+  "required_date",
+  "priority",
+  "status",
+  "column_break_7",
+  "item_description",
+  "quantity",
+  "uom",
+  "target_price",
+  "currency",
+  "section_supplier_info",
+  "current_supplier",
+  "current_price",
+  "pain_point",
+  "section_evaluation",
+  "expected_saving",
+  "risk_note",
+  "human_approval_required",
+  "section_approval",
+  "approved_by",
+  "approved_at",
+  "section_result",
+  "purchase_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Request Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "label": "Requested By",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "required_date",
+   "fieldtype": "Date",
+   "label": "Required Date"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Priority",
+   "options": "Low\nMedium\nHigh\nUrgent"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nSourcing\nWaiting Approval\nApproved\nRejected\nConverted",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_description",
+   "fieldtype": "Small Text",
+   "label": "Item Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "target_price",
+   "fieldtype": "Currency",
+   "label": "Target Price",
+   "options": "currency"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_supplier_info",
+   "fieldtype": "Section Break",
+   "label": "Supplier Information"
+  },
+  {
+   "fieldname": "current_supplier",
+   "fieldtype": "Link",
+   "label": "Current Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "current_price",
+   "fieldtype": "Currency",
+   "label": "Current Price",
+   "options": "currency"
+  },
+  {
+   "fieldname": "pain_point",
+   "fieldtype": "Small Text",
+   "label": "Pain Point"
+  },
+  {
+   "fieldname": "section_evaluation",
+   "fieldtype": "Section Break",
+   "label": "Evaluation"
+  },
+  {
+   "fieldname": "expected_saving",
+   "fieldtype": "Currency",
+   "label": "Expected Saving",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "risk_note",
+   "fieldtype": "Small Text",
+   "label": "Risk Note",
+   "read_only": 1
+  },
+  {
+   "fieldname": "human_approval_required",
+   "fieldtype": "Check",
+   "default": "1",
+   "label": "Human Approval Required"
+  },
+  {
+   "fieldname": "section_approval",
+   "fieldtype": "Section Break",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_at",
+   "fieldtype": "Datetime",
+   "label": "Approved At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_result",
+   "fieldtype": "Section Break",
+   "label": "Result"
+  },
+  {
+   "fieldname": "purchase_order",
+   "fieldtype": "Link",
+   "label": "Purchase Order",
+   "options": "Purchase Order",
+   "read_only": 1
+  }
+ ],
+ "modified": "2026-06-04 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TradeOS AI",
+ "name": "Sourcing Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1,
+ "is_submittable": 1
+}
